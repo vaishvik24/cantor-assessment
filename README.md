@@ -32,6 +32,7 @@
    - Example: GET http://localhost:8080/sampleAPI/analysis?tickers=AMZN,META,NVDA&range=3mo
             - username and password can be retrieved or set from `user.properties` file.  
 
+    - ![plot](./api-doc.png)
 
 - Find the jar file under target folder
 
