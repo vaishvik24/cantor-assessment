@@ -70,7 +70,7 @@ Link: https://api.postman.com/collections/3753695-ef8977bc-ed78-4b73-858a-55de89
 
 ##### 📹 Video Link:
 
-Link:
+Link: https://www.youtube.com/channel/UCgu0ePzhOtskwe1N8ck9aXg
 
 #### 📲 Connect with me
 
