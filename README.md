@@ -1,4 +1,8 @@
-## Cantor Fitzgerald Assessment
+<h1 align="center">
+
+[//]: # (  <img alt="cgapp logo" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsovereignstrategy.com%2Fwp-content%2Fuploads%2F2021%2F05%2Fcantor-300x300.png&imgrefurl=https%3A%2F%2Fsovereignstrategy.com%2Fportfolio-item%2Fcantor-fitzgerald%2F&tbnid=nvyYYxsSoWe96M&vet=12ahUKEwiw7dPhw6n9AhV_JmIAHaLzDDkQMygSegUIARCRAg..i&docid=0-AWeVlMLMmxHM&w=300&h=300&q=cantor%20fitzgerald&ved=2ahUKEwiw7dPhw6n9AhV_JmIAHaLzDDkQMygSegUIARCRAg" width="224px"/><br/>)
+  Cantor Fitzgerald Assessment
+</h1>
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
@@ -30,7 +34,7 @@
     - http://localhost:8080/sampleAPI/analysis?tickers={tickers}&range={range}
         - tickers: comma separated stock tickers
         - range: time range
-    - The percentage moves is taken by 1 day interval
+    - The percentage moves is taken by 1 day interval. If you want to change default parameters, then update application.properties file as per requirement. 
     - Example: GET http://localhost:8080/sampleAPI/analysis?tickers=AMZN,META,NVDA&range=3mo
       - username and password can be retrieved or set from `user.properties` file.
 
