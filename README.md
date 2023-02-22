@@ -79,6 +79,7 @@
   would be the best solution to use.
 - Error handling for corner cases such as ticker name does not exist, invalid time range input etc.
 - Use `user.properties` file to get available user credential and modification in it.
+- Code is written the scalable way such that new APIs, Functions, or Features can be added with minimal changes in the current codebase. 
 
 #### 🔜 Future Improvements:
 
@@ -102,5 +103,7 @@ Link: https://drive.google.com/file/d/1BIkDJjo5CU1stt-zDitEO-1wjLxsugtK/view?usp
 &nbsp; <a href="https://www.linkedin.com/in/vaishvik-brahmbhatt-176948166/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
 &nbsp; <a href="mailto:vbrahmb2@stevens.edu" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
 </p>
+
+- Please provide your feedback if any
 
 ⭐️ From [Vaishvik](https://github.com/vaishvik24)
