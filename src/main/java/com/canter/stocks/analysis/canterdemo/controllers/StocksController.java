@@ -24,6 +24,7 @@ public class StocksController {
     public StocksController(StocksService stocksService) {
         this.stocksService = stocksService;
     }
+
     Logger logger = LoggerFactory.getLogger(StocksController.class);
 
 
@@ -37,7 +38,7 @@ public class StocksController {
     @GetMapping("/sampleAPI/analysis")
     public Map<String, List<StockAnalysis>> getStockAnalysisReport(@RequestParam String tickers, @RequestParam String range) {
         logger.info(tickers + " with range of " + range);
-        String [] companies = tickers.split(",");
+        String[] companies = tickers.split(",");
         return stocksService.getStockAnalysisReport(companies, range);
     }
 }

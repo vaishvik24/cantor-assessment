@@ -19,18 +19,19 @@ public class StocksService {
 
     // injecting dependencies
     @Autowired
-    public  StocksService(YahooClient yahooClient) {
+    public StocksService(YahooClient yahooClient) {
         this.yahooClient = yahooClient;
     }
+
     Logger logger = LoggerFactory.getLogger(StocksController.class);
 
     // return map of top 3 stock analysis percentage moves for each tracker
-    public Map<String, List<StockAnalysis>> getStockAnalysisReport(String [] symbols, String range) {
+    public Map<String, List<StockAnalysis>> getStockAnalysisReport(String[] symbols, String range) {
 
         Map<String, List<StockAnalysis>> stockAnalysisReport = new HashMap<>();
         try {
             // for each given tracker, get report from service layer
-            for(String symbol: symbols) {
+            for (String symbol : symbols) {
                 logger.info("Processing symbol: " + symbol + " with range = " + range);
                 List<StockAnalysis> stockAnalysisRep = yahooClient.getStockAnalysisReport(symbol, range);
                 stockAnalysisReport.put(symbol, stockAnalysisRep);

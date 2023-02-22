@@ -39,8 +39,7 @@ public class HttpClient {
     };
 
     // This resolves SSL related issue
-    SSLContext sslContext = new SSLContextBuilder().loadTrustMaterial(null,
-            TrustSelfSignedStrategy.INSTANCE).build();
+    SSLContext sslContext = new SSLContextBuilder().loadTrustMaterial(null, TrustSelfSignedStrategy.INSTANCE).build();
     SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(sslContext, hostnameVerifier);
 
     // Returns HTTP client with SSL disabled
@@ -52,9 +51,7 @@ public class HttpClient {
     String getRequest(String url) {
         HttpGet request = new HttpGet(url);
         logger.info("Method GET: " + url);
-        try (
-                CloseableHttpClient httpClient = getHttpClient();
-                CloseableHttpResponse response = httpClient.execute(request)) {
+        try (CloseableHttpClient httpClient = getHttpClient(); CloseableHttpResponse response = httpClient.execute(request)) {
             logger.debug("Response retrieved: " + response);
             HttpEntity entity = response.getEntity();
             if (entity != null) {

@@ -42,15 +42,7 @@ public class StockAnalysisJsonParser {
             BigDecimal low = lows.get(i).decimalValue();
             BigDecimal close = closes.get(i).decimalValue();
 
-            HistoricalQuote historicalQuote = new HistoricalQuote(
-                    symbol,
-                    calendar,
-                    open,
-                    low,
-                    high,
-                    close,
-                    adjClose,
-                    volume);
+            HistoricalQuote historicalQuote = new HistoricalQuote(symbol, calendar, open, low, high, close, adjClose, volume);
             historicalQuoteData.add(historicalQuote);
         }
 
