@@ -18,17 +18,23 @@
 1. Clone the GitHub repo in your local
 2. Build maven project ([Refer docs](https://metamug.com/article/java/build-run-java-maven-project-command-line.html))
     ```bash
-    mvn clean install
-    mvn compile
+    $ mvn clean install
+    $ mvn compile
     ```
 3. Run the Spring boot - Java project. The spring boot server is running on 8080 port. Use API endpoint to test whether
    the server is running or not
-    - GET http://localhost:8080/sampleAPI/test
+      - GET http://localhost:8080/sampleAPI/test
 
-    - The project can be complied & executed in 2 ways:
-        1. By importing project in Intellij/Eclipse and run using `run` button on the CanterDemoApplication file
-        2. By compiling and running jar file:
-           ```java -jar target/canter-demo-0.0.1-SNAPSHOT.jar ```
+      - The project can be complied & executed in 3 ways:
+          1. By importing project in Intellij/Eclipse and run using `run` button on the CanterDemoApplication file
+          2. By compiling and running jar file:
+             ```bash
+              $ java -jar target/canter-demo-0.0.1-SNAPSHOT.jar 
+             ```
+          3. By using maven:
+             ```bash
+              $ mvn spring-boot:run 
+             ```
 
 4. API End point:
     - http://localhost:8080/sampleAPI/analysis?tickers={tickers}&range={range}
@@ -38,9 +44,22 @@
     - Example: GET http://localhost:8080/sampleAPI/analysis?tickers=AMZN,META,NVDA&range=3mo
       - username and password can be retrieved or set from `user.properties` file.
 
-    - ![plot](./api-doc.png)
+      &rarr;  Find the jar/war/zip files under target folder.
 
-- Find the jar file under target folder
+      ![plot](./api-doc.png)
+
+
+### 👨‍💻 Preconfigured username and password: 
+
+| First Header | Second Header |
+|--------------|---------------|
+| vaishvik     | vaish         |
+| elliot       | napakh        |
+| name1        | password1     |
+| name2        | password2     |
+| cantor       | fitz          |
+| name3        | password3     |
+
 
 ### 🏛️ Project Structure:
 
