@@ -88,7 +88,7 @@ public class YahooClient {
         String yahooClientURL = stockAnalysisQuery.getYahooUrl(symbol, range);
         String stockHistoricalJsonContent = httpClient.getRequest(yahooClientURL);
         // parse historical json data to valid data class
-        return stockAnalysisJsonParser.parseData(symbol, stockHistoricalJsonContent);
+        return stockAnalysisJsonParser.parseJsonStringData(symbol, stockHistoricalJsonContent);
     }
 
     // return final analysis report to service layer
